@@ -1,3 +1,4 @@
+# redeploy trigger
 rom flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
@@ -8,4 +9,4 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    return jsonify({"status": "working"}) 
+    return jsonify({"status": "working"})
